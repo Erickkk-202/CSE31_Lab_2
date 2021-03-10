@@ -1,0 +1,30 @@
+Assignment 1:
+1. What line caused the segmentation fault?
+The fault is in line 18. The reason why it has a fault is because the "&" is missing in front of the input.
+
+2. How do you fix the line so it works properly?
+The way you fix the sagmation fault is by adding a "&" in front of input in line 18.
+
+3. What is the bug here?
+The bug was that sum needs to be passed as a pointer instead of a variable.
+
+4. How do you fix it?
+I fixed it by addressing sum as a pointer and passing its value as a pointer.
+
+Assignment 2:
+
+1. Run the program with the following input: “HELLO!” for str1 and “hello!” for str2. Is the output
+expected?
+
+no the code is not expected. The code returned "HELLO!hello!hello!" instead of "HELLO!hello!"
+
+2. Do not stop the program, enter “HI!” for str1 and “hi!” for str2. Is the output expected? What is
+the bug here? Try to fix the program so it will print the output correctly.
+
+The output printed out old memory with the new output. The way I fixed the code is by by adding "s1[s1len + s2len]='\0';" Which tells S1 that it is the end of the array.
+
+3. Do not stop the program, enter “Hello! How are you?” for str1 and “I am fine, thank
+you!
+
+The output is not expected. The output has the two strings crashed together. I think the reason it does this is because it has a space after Hello!
+Since it has a space after hello! the program thinks thats the end of the string.
